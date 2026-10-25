@@ -34,8 +34,8 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
 <header><div class="in"><div class="brand">PlayJar</div><h1>Privacy Policy</h1></div></header>
 <main>
 <h1 id="playjar-privacy-policy">PlayJar — Privacy Policy</h1>
-<p><strong>Effective date:</strong> 25 October 2026</p>
-<p>This Privacy Policy explains how <strong>PlayJar</strong> (the "App", Android package <code>com.xanjay.gamespot</code>) handles your information. PlayJar is developed and operated by <strong>Sanjay Chawla</strong>, an individual developer based in India ("we", "us"). If you have any questions, contact us at <a href="mailto:xanjay.chawla@gmail.com"><strong>xanjay.chawla@gmail.com</strong></a>.</p>
+<p><strong>Effective date:</strong> 25 October 2026 (draft for app 1.0.6 — not yet published)</p>
+<p>This Privacy Policy explains how <strong>PlayJar</strong> (the "App", Android package <code>com.xanjay.gamespot</code>) handles your information. PlayJar was previously called "Game Spot". PlayJar is developed and operated by <strong>Sanjay Chawla</strong>, an individual developer based in India ("we", "us"). If you have any questions, contact us at <a href="mailto:xanjay.chawla@gmail.com"><strong>xanjay.chawla@gmail.com</strong></a>.</p>
 <p>PlayJar is a free collection of casual games (a 5-letter word-guessing game, 2048, Tic-Tac-Toe, Sudoku, Word Wheel, Brick Puzzle and Memory Match). It is supported by ads, and offers an optional paid subscription that removes ads.</p>
 <h2 id="1-information-we-collect">1. Information we collect</h2>
 <h3 id="11-information-you-give-us">1.1 Information you give us</h3>
@@ -57,14 +57,14 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
 <li><strong>Word Wheel word reports.</strong> When you try a valid-looking word in Word Wheel that is not in that level's word list, the App sends us the word, the level number and the level's letters so we can improve the word lists.</li>
 <li><strong>Daily rewards and streak freezes.</strong> If you are signed in, we store your daily-reward coin balance, the day of your 7-day reward calendar, the date you last claimed, how many streak freezes you hold and have used, and the date you last earned a freeze by watching an ad, so they follow you to other devices. If you are not signed in, these stay on your device only.</li>
 <li><strong>Daily Challenge results and streaks.</strong> When you finish a Daily Word or Daily Sudoku we store the date, whether you solved it, your guesses or mistakes, your time, a coloured summary grid (it does not contain the answer) and your current and best streak. Daily leaderboards show other players only a shortened form of your email address's first part (for example "san***"), never the full address.</li>
-<li><strong>App usage events (our own analytics).</strong> The App sends us simple usage events: app opened and closed (session start and end, with a random session ID and how long the session lasted), game started and finished or quit (game, result, score, duration), games added to or removed from My Games, ads and reward videos shown or rewarded (and where in the App), daily challenge completed, and subscription purchase started or completed. Each event carries the app version, platform and a random installation ID created by the App (not your advertising ID or any other device identifier). Events are stored on your device and sent when you are online. If you are signed in, events are linked to your account. We use them only to understand which features are used and how many players return, and to improve the App. We do not sell them or share them with advertisers. Separately, the App also uses Google Analytics for Firebase (see <a href="#firebase-analytics">section 3A</a>), which you can switch off.</li>
+<li><strong>App usage events (our own analytics).</strong> The App sends us simple usage events: app opened and closed (session start and end, with a random session ID and how long the session lasted), game started and finished or quit (game, result, score, duration), games added to or removed from My Games, ads and reward videos shown or rewarded (and where in the App), daily challenge completed, and subscription purchase started or completed. Each event carries the app version, platform and a random installation ID created by the App (not your advertising ID or any other device identifier). Events are stored on your device and sent when you are online. If you are signed in, events are linked to your account. We use them only to understand which features are used and how many players return, and to improve the App. We do not sell them or share them with advertisers.</li>
+<li><strong>Gameplay analytics (Firebase / Google Analytics).</strong> From app version 1.0.8 the App also collects gameplay analytics events (screens viewed, game starts and finishes, ad and purchase events) through Google's Firebase / Google Analytics for Firebase SDK to help us improve the games. Google processes this data under the <a rel="noopener" href="https://policies.google.com/privacy">Google Privacy Policy</a>; we do not use it to identify you or for advertising.</li>
 <li><strong>Device information (for analytics).</strong> With usage events the App sends your device's brand and model (for example "Samsung SM-A515F"), Android version, whether it is a phone or a tablet, and your language/region setting (for example "en-IN"). This does not include your advertising ID, IMEI, serial number or any other device identifier.</li>
 <li><strong>Approximate location (country and city).</strong> When our server receives usage events, it derives your approximate country and city from the network request (using the geolocation headers our hosting provider adds) and stores only that country and city with the event. We do not store your IP address with analytics events, and we never collect precise (GPS) location.</li>
 <li><strong>Time zone.</strong> Your device's time zone setting (for example "Asia/Kolkata") is sent when you sign up or sign in, so that daily statistics follow your local day. It is also sent with usage events.</li>
 <li><strong>Subscription records.</strong> If you subscribe to "PlayJar No Ads", we receive from Google Play the subscription's product, its purchase token, its status (active, grace period, expired, cancelled) and its expiry date, so we can verify the purchase and remove ads. We also receive and store Google Play's subscription status notifications (which contain the purchase token).</li>
 <li><strong>Sign-in tokens.</strong> To keep you signed in, the App stores sign-in tokens in your device's secure storage (Android Keystore). Our server stores only a hashed copy of your refresh token.</li>
 <li><strong>Advertising data (collected by Google AdMob).</strong> See section 3.</li>
-<li><strong>App usage analytics (collected by Google Analytics for Firebase).</strong> See <a href="#firebase-analytics">section 3A</a>.</li>
 <li><strong>Game catalog and downloads.</strong> The Browse screen downloads the list of available games from our server. If you add a downloadable game, the App downloads that game's files from our storage provider (Supabase) and keeps them on your device until you remove the game; like any download, this request includes your IP address. Downloaded games run offline inside the App and can report only a score or result back to the App.</li>
 <li><strong>Server logs.</strong> Like most online services, our servers and hosting provider may record technical information such as your IP address and request times, and error details, to operate and secure the service.</li>
 </ul>
@@ -95,15 +95,6 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
 <li><strong>Your controls.</strong> You can reset or delete your advertising ID, or opt out of personalised ads, in your Android settings (<strong>Settings &gt; Google &gt; Ads</strong> or <strong>Settings &gt; Privacy &gt; Ads</strong>, depending on your device).</li>
 <li><strong>Subscribers.</strong> If you have an active "PlayJar No Ads" subscription, the App shows no pop-up (interstitial) or banner ads. Subscribers may optionally choose to watch reward videos for extra hints and undos; these are only shown when you tap to watch one. When a subscriber watches a reward video, Google's ad SDK collects the data described above for that video.</li>
 </ul>
-<h2 id="firebase-analytics">3A. App analytics (Google Analytics for Firebase)</h2>
-<p>PlayJar uses <strong>Google Analytics for Firebase</strong>, a service provided by <strong>Google LLC</strong>, to understand how the App is used so we can fix problems and improve games.</p>
-<ul>
-<li><strong>What is collected.</strong> Google's Firebase SDK in the App collects <strong>app usage</strong> data (for example app opens and sessions, games started and finished, results and scores, ads and reward videos shown, subscription purchase started or completed, and games added to My Games), <strong>device data</strong> (such as device model, Android version, language, screen size and an app-instance ID generated by Firebase), and <strong>approximate location</strong> (country, region or city, estimated by Google from your IP address). We also set three simple properties: the app version, your theme setting, and whether you are a subscriber (yes/no).</li>
-<li><strong>What is not sent.</strong> We do not send your name, email address, account ID or any other personal details to Google Analytics, and we never collect precise (GPS) location. We have configured Firebase not to collect your advertising ID or Android ID and not to use this data for ad personalization (ad personalization signals are turned off). <strong>Google Signals is turned off</strong>, so this data is not linked to your Google account or used for cross-device reporting.</li>
-<li><strong>How long it is kept.</strong> Google Analytics keeps this data for <strong>14 months</strong> (the retention period set in our Google Analytics settings) and then deletes it automatically.</li>
-<li><strong>How Google uses it.</strong> Google processes this data to provide analytics reports to us. See <a rel="noopener" href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, the <a rel="noopener" href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a rel="noopener" href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</li>
-<li><strong>Your choice (opt-out).</strong> Analytics is on by default. You can turn it off at any time in the App under <strong>Settings &gt; Help us improve &gt; Share usage analytics</strong>. When it is off, the App stops sending data to Google Analytics for Firebase. This does not affect PlayJar's own usage events described in section 1.2, which are needed to run and secure the service.</li>
-</ul>
 <h2 id="4-who-we-share-information-with">4. Who we share information with</h2>
 <p>We share information only as needed to run the App:</p>
 <div class="tw"><table>
@@ -119,11 +110,6 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
 <td><strong>Google AdMob</strong> (Google LLC)</td>
 <td>Advertising ID, IP address, app/ad interactions, diagnostics (collected directly by Google's SDK)</td>
 <td>Showing and measuring ads, fraud prevention</td>
-</tr>
-<tr>
-<td><strong>Google Analytics for Firebase</strong> (Google LLC)</td>
-<td>App usage events, device data, Firebase app-instance ID, approximate location (collected directly by Google's SDK; no names or emails). Can be switched off in Settings.</td>
-<td>App analytics</td>
 </tr>
 <tr>
 <td><strong>Google Play Billing</strong> (Google LLC)</td>
@@ -177,7 +163,6 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
 <li><strong>Data stored only on your device</strong> (when you are not signed in) stays on your device until you clear the App's data or uninstall it.</li>
 <li>If we build a game from your suggestion, we may credit you by a display name in that game; that credit may remain after you delete your account. Tell us if you'd like it removed.</li>
 <li>Data collected by Google AdMob is retained under Google's policies.</li>
-<li>Google Analytics for Firebase data is retained for the period set in our Google Analytics settings (we use 14 months) and then deleted by Google.</li>
 </ul>
 <h2 id="delete">6. Deleting your account and data</h2>
 <p>You can delete your account at any time:</p>
